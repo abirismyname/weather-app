@@ -55,7 +55,7 @@ export default function Search() {
     const loadCities = async (searchCity: string) => {
       if (!searchCity) return;
       const response = await axios.request({
-        url: `${GEO_API_URL}/cities?minPopulation=500000&namePrefix=${searchCity}`,
+        url: `${GEO_API_URL}/cities?minPopulation=100000&namePrefix=${searchCity}`,
         ...geoApiOptions,
       });
       setSuggestions(response.data.data);
