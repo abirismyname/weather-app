@@ -28,8 +28,8 @@ export default function TemperatureCard() {
       : getSeasonImage(month).light;
   return (
     <div className="relative w-full h-80 mb-10">
-      <img className="bg-card-blur" src={`${pic}`}></img>
-      <img className="bg-card" src={`${pic}`}></img>
+      <img className="bg-card-blur object-cover" src={`${pic}`}></img>
+      <img className="bg-card object-cover" src={`${pic}`}></img>
       <div className="card-size absolute card-center flex justify-between items-end pb-4 px-6 md:px-12 text-rich-black dark:text-white">
         <div className="flex flex-col">
           {WMOToIcon(currentWeather.hourly.weathercode[closestTimeIndex])}
