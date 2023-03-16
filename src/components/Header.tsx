@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header className="flex items-center justify-between my-10">
-      <p className="text-3xl font-black text-slate-700 dark:text-white">SEIN</p>
+      <p className="text-3xl font-black text-slate-700 dark:text-white">Hello!</p>
       <div className="flex items-center">
         <Search />
         <div>
